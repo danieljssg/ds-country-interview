@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-export const Template = () => {
+export const TemplateShad = () => {
   return (
     <>
       <div
