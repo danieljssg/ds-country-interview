@@ -53,5 +53,6 @@ npm run dev
 ```
 
 ## Frontend Environment Variables
-
+- `API_URL`
 The project has an environment variable called `API_URL`, which must contain the address of localhost or the URL where the backend is hosted, including the port if applicable.
+ For example [url:port]/api it is important to use the `/api` since it is the entry point to the other endpoints
