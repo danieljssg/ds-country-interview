@@ -1,57 +1,57 @@
 # ds-country-interview
 
-# ES NECESARIO INICIAR PRIMERO EL BACKEND Y LUEGO EL FRONTEND
+# IT IS NECESSARY TO START THE BACKEND FIRST AND THEN THE FRONTEND
 
-## Instrucciones para iniciar el backend
+## Instructions to start the backend
 
-Para iniciar el backend, ingresa a la carpeta del proyecto y ejecuta el siguiente comando:
+To start the backend, navigate to the project folder and run the following command:
 
 ```bash
 cd backend
 npm run dev
 ```
 
-En caso de querer iniciar el backend en modo producción, ejecuta el siguiente comando:
+If you want to start the backend in production mode, run the following command:
 
 ```bash
 cd backend
 npm run start
 ```
 
-## Variables de entorno BACKEND
+## Backend Environment Variables
 
-- `PORT`: Puerto en el que se ejecuta la aplicación (default "3352").
-- `SESSION_SECRET`: Secreto para express session
-- `COUNTRIES_API`: URL para obtener los países disponibles. (Nager.Date API)
-- `COUNTRY_INFO_API`: URL para obtener información de un país. (Nager.Date API)
-- `COUNTRY_POPULATION_API`: URL para obtener la población de los países. (Country Info API -Postman Country Info API)
-- `COUNTRY_FLAG_API`: URL para obtener las imágenes de las banderas de los países. (Country Info API -Postman Country Info API)
+- `PORT`: Port on which the application runs (default "3352").
+- `SESSION_SECRET`: Secret for express session
+- `COUNTRIES_API`: URL to obtain the available countries. (Nager.Date API)
+- `COUNTRY_INFO_API`: URL to obtain information about a country. (Nager.Date API)
+- `COUNTRY_POPULATION_API`: URL to obtain the population of countries. (Country Info API - Postman Country Info API)
+- `COUNTRY_FLAG_API`: URL to obtain images of the flags of the countries. (Country Info API - Postman Country Info API)
 
----IMPORTANTE---
+---IMPORTANT---
 
-- `DEFAULT_FLAG`: URL de la imagen por defecto para las banderas (ej. "https://www.svgrepo.com/show/340721/no-image.svg").
-  Es necesaria, debido a que en algunos países no se cuenta con una imagen de su bandera, por ende, se mostrará esta imagen por defecto.
+- `DEFAULT_FLAG`: URL of the default image for flags (e.g. "https://www.svgrepo.com/show/340721/no-image.svg").
+  This is necessary because some countries do not have an image of their flag, so this default image will be shown.
 
-# ES NECESARIO INICIAR PRIMERO EL BACKEND Y LUEGO EL FRONTEND
+# IT IS NECESSARY TO START THE BACKEND FIRST AND THEN THE FRONTEND
 
-## Instrucciones para iniciar el frontend
+## Instructions to start the frontend
 
-Para iniciar el frontend, ingresa a la carpeta del proyecto y ejecuta el siguiente comando:
+To start the frontend, navigate to the project folder and run the following command:
 
 ```bash
 cd frontend
 npm run prd
 ```
 
-Esto realizará el build y posteriormente iniciará la aplicación de Next.js.
+This will build and then start the Next.js application.
 
-Si deseas ejecutar la aplicación en modo desarrollo, simplemente utiliza:
+If you want to run the application in development mode, simply use:
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-## Variables de entorno FRONTEND
+## Frontend Environment Variables
 
-El proyecto tiene una variable de entorno llamada `API_URL`, que debe contener la dirección de localhost o la URL donde esté alojado el backend, incluyendo el puerto si aplica.
+The project has an environment variable called `API_URL`, which must contain the address of localhost or the URL where the backend is hosted, including the port if applicable.
